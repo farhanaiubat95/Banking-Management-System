@@ -1,0 +1,244 @@
+/* Report Page */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    padding: 50px 0;
+}
+.rep-nav {
+    width: 100%;
+    text-align: right;
+    background: rgb(156,188,191);
+    background: linear-gradient(90deg, rgba(156,188,191,1) 27%, rgba(54,125,136,0.9690847530418417) 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+  }
+  .rep-menu{
+    margin-right: 60px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .rep-menu a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px 20px;
+    border: 1px solid transparent;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: all linear .3s;
+  }
+  
+  .rep-menu a:hover{
+    color: white;
+    background-color: #0f424a;
+    transition: all linear .3s;
+  }
+  .rep-menu form{
+    margin-top: 10px;
+  }
+
+  .rep-menu button{
+   background-color: transparent;
+   font-weight: bold;
+  }
+  .rep-menu button:hover{
+    color: white;
+    background-color: #0f424a;
+    transition: all linear .3s;
+  }
+
+.receipt {
+    background: #fff;
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.customer-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.customer-info p {
+    margin: 5px 0;
+    font-size: 40px;
+    font-weight: bold;
+    color: #0f424a;
+    margin-bottom: 32px;
+}
+
+.receipt-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #0f424a;
+}
+
+.nav-img {
+	width: 50%;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	font-size: 23px;
+	font-weight: bold;
+}
+.nav-img p {
+	font-size: 23px;
+	font-weight: bold;
+	margin-top: 21px;
+}
+.nav-img img {
+  width: 50px;
+  padding: 10px;
+}
+.rep-address{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+.rep-address p {
+    font-weight: 700;
+    line-height: 0px;
+}
+
+.rep-logo img {
+    width: 94px;
+    padding: 0;
+}
+
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+
+}
+
+.transaction-table th, .transaction-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.transaction-table th {
+    background-color: #0f424a;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.customer-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.customer-text{
+   width: 50%;
+}
+.customer-text p {
+    margin: 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0f424a;
+}
+.customer-text p span {
+    font-weight: 400;
+}
+.total {
+    width: 50%;
+    text-align: right;
+    margin: 32px 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #0f424a;
+}
+
+
+
+.footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0f424a;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0f424af4;
+}
+
+@media print {
+    button {
+        display: none;
+    }
+    .transaction-table th, .transaction-table td {
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .transaction-table th {
+        color: black;
+        font-weight: bold;
+    }
+
+    .customer-info p {
+        margin: 5px 0;
+        font-size: 20px;
+    }
+    .customer-text p {
+        font-size: 17px;
+    }
+
+    .total {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    .receipt {
+        background: #fff;
+        width: 95%;
+        box-shadow: none;
+        border-radius: 0;
+    }
+    body {
+        background-color: transparent;
+        padding: 10px 0;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+    }
+    a{
+        display: none;
+    }
+    
+}

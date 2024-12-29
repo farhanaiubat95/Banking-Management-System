@@ -1,0 +1,115 @@
+/* user pannel */
+.logout-form {
+    display: inline;
+  }
+  
+  .logout-form button {
+    margin: 20px 0;
+  }
+  
+  .user-header-nav {
+    width: 100%;
+    background: rgb(156,188,191);
+    background: linear-gradient(90deg, rgba(156,188,191,1) 27%, rgba(54,125,136,0.9690847530418417) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: end;
+  }
+
+  .panel-head {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: self-start;
+    margin-bottom: 20px;
+}
+
+.panel-content {
+  width: 24%;
+  background-color: #0f424a;
+  text-align: start;
+  padding: 10px;
+}
+
+.panel-content p{
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+  .user-pannel {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    gap: 20px;
+  }
+  
+  .user-table{
+    width: 50%;
+  }
+
+  .user-transaction {
+    width: 50%;
+    padding: 5px 40px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 12px #aaa;
+    text-align: center;
+    height: 270px;
+    background: #0f424a;
+    border-radius: 5px;
+}
+.user-transaction input{
+  padding: 5px;
+  margin: 10px 0;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+}
+
+.user-transaction select{
+  padding: 5px;
+  margin: 0 10px;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+}
+
+.user-transaction input::placeholder{
+  color: white;
+}
+
+.user-transaction button{
+  padding: 5px 10px;
+  background: #0f424a;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+  .user-header {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #89858e9d;
+    color: #333;
+    text-align: center;
+  }
+  
+.transaction-type{
+  font-size: 15px;
+  text-align: start;
+  display: flex;
+  color: white;
+}
